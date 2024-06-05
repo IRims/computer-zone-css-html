@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style1.css" />
+    <style>
+      .body {
+        font-family: " font-family: " Roboto ",sans-serif";
+        background-image: url("Resources/back.png");
+        background-size: cover;
+        height: 560px;
+        color: #ffffff;
+        padding: 3%;
+      }
+      .device {
+        display: inline-block;
+        text-align: center;
+        background-image: linear-gradient(to bottom right, #ffe100, #206295);
+        font-weight: bold;
+        align-items: center;
+        margin: 0% 0% 4% 4%;
+      }
+      .device:hover {
+        background-image: linear-gradient(to bottom right, #206295, #ffe100);
+      }
+      #phone {
+        position: relative;
+        width: 220px;
+        height: 400px;
+        top: 4%;
+        border: 4px black solid;
+        border-radius: 10px;
+      }
+      #watch {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        top: 35%;
+        border: 5px #000000 solid;
+        border-radius: 7px;
+      }
+      #ipad {
+        position: relative;
+        width: 320px;
+        height: 450px;
+        border: 6px black solid;
+        border-top-width: 15px;
+        border-bottom-width: 15px;
+        border-radius: 5%;
+      }
+      #laptop {
+        transform: scaleY(0.1);
+        position: relative;
+        width: 240px;
+        height: 150px;
+        border: 4px black solid;
+        border-radius: 7px;
+      }
+      #laptop:after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 255px;
+        height: 10px;
+        border-radius: 2px;
+        background: black;
+        margin: 43% 0 0 -3%;
+      }
+      #laptop:hover {
+        transform: scaleY(1);
+      }
+      .device p {
+        top: 90%;
+      }
+      /* .box {
+        display: inline;
+        position: relative;
+        margin-left: 20px;
+        background: #000000;
+        margin-right: 20px;
+      }  */
+      .name {
+        color: linear-gradient(to left, rgb(66, 66, 66), rgb(192, 190, 190));
+        font-size: x-large;
+      }
+      #iphone p {
+        padding-top: 40%;
+      }
+      #watch .name {
+        font-size: large;
+        padding-top: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="tophead">COMPUTER <span class="zone">ZONE</span></div>
+      <nav>
+        <div class="topnav">
+          <a href="index.html">HOME</a>
+          <a href="#">PRODUCTS</a>
+          <a href="#">LAPTOPS</a>
+          <a href="#">GRAPHIC CARDS</a>
+          <a href="#">MONITORS</a>
+          <a href="#">PRINTERS</a>
+          <a href="#">SPEAKERS</a>
+          <a href="#">NETWORK</a>
+          <a href="apple.html" class="active">APPLE</a>
+        </div>
+      </nav>
+    </header>
+    <div class="body">
+      <div class="device" id="phone">
+        <p class="name">IPHONE</p>
+      </div>
+      <div class="device" id="watch">
+        <p class="name">iWatches</p>
+      </div>
+      <div class="device" id="laptop">
+        <p class="name">MACBOOK</p>
+      </div>
+
+      <div class="device" id="ipad">
+        <p class="name">iPad</p>
+      </div>
+    </div>
+  </body>
+</html>
